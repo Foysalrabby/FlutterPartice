@@ -48,13 +48,17 @@ class _MyHomePageState extends State<MyHomePage> {
      
         title: Text(widget.title),
       ),
-      body: Container(
+      body:Center(
+        child:Container(
         width: 100,
         height: 100,
         color: Colors.red,
         child: Center(
          child: Text("Hello")),
-      ),
+      ), 
+      ) ,
+      
+      
       
     );
   }
