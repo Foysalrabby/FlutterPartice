@@ -43,8 +43,8 @@ class _MyHomePageState extends State<MyHomePage> {
       body:Container(
            
         child: Row(
-         mainAxisAlignment: MainAxisAlignment.end, //row mainaxielement is horizontzl like pasapasi like an
-        
+         mainAxisAlignment: MainAxisAlignment.start, //row mainaxielement is horizontzl like pasapasi like an
+        crossAxisAlignment: CrossAxisAlignment.center,
         children:<Widget> [
            Text("A" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
            Text("B" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
