@@ -40,7 +40,9 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body:Row(
+      body:Container(
+           width: 300,
+        child: Row(
          mainAxisAlignment: MainAxisAlignment.spaceEvenly, //row mainaxielement is horizontzl like pasapasi like an
         
         children:<Widget> [
@@ -55,7 +57,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
            Text("data")
 
-      ]),//row is the horihontal form where mainacceselement is row and crossaseelement is colum 
+      ]) ,
+      )
+      
+     ,//row is the horihontal form where mainacceselement is row and crossaseelement is colum 
     );
   }
 }
