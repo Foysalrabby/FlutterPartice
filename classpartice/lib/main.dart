@@ -40,11 +40,17 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body:Row(children: [
+      body:Row(children:<Widget> [
            Text("A" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
            Text("B" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
            Text("C" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
-           Text("D" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),)
+           Text("D" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
+           ElevatedButton( child: Text("click me"),
+           onPressed: (){
+            print("object");
+           },),
+
+           Text("data")
 
       ]),//row is the horihontal form where mainacceselement is row and crossaseelement is colum 
     );
