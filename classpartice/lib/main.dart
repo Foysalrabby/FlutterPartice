@@ -40,10 +40,13 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(child: Container(
-        width: 200,
-        height: 200,
-        child: Image.asset("assets/images/bascket.png"))),
+      body:Column(children: [
+           Text("A" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
+           Text("B" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
+           Text("C" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
+           Text("D" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),)
+
+      ]),//COLUM is the vertical form where mainacceselement is row and crossaseelement is colum 
     );
   }
 }
