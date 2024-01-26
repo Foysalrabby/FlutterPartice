@@ -41,7 +41,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body:Container(
-           
+          width: 400, 
+          height: 400,
+          color: Colors.blue,
         child: Row(
          mainAxisAlignment: MainAxisAlignment.start, //row mainaxielement is horizontzl like pasapasi like an
         crossAxisAlignment: CrossAxisAlignment.center,
