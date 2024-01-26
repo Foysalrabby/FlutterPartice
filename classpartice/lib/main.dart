@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
           height: 400,
           color: Colors.blue,
         child: Column(
-        //  mainAxisAlignment: MainAxisAlignment.start, //row mainaxielement is horizontzl like pasapasi like an
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly, //row mainaxielement is horizontzl like pasapasi like an
         crossAxisAlignment: CrossAxisAlignment.start, //coloum crossAxisAlignment is  vertical  niche niche like an androiad
 
         children:<Widget> [
