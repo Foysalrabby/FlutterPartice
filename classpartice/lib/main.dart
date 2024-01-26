@@ -40,13 +40,13 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body:Column(children: [
+      body:Row(children: [
            Text("A" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
            Text("B" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
            Text("C" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
            Text("D" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),)
 
-      ]),//COLUM is the vertical form where mainacceselement is row and crossaseelement is colum 
+      ]),//row is the horihontal form where mainacceselement is row and crossaseelement is colum 
     );
   }
 }
