@@ -41,12 +41,12 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body:Container(
-          width: 400, 
+         
           height: 400,
           color: Colors.blue,
         child: Column(
-         mainAxisAlignment: MainAxisAlignment.start, //row mainaxielement is horizontzl like pasapasi like an
-        //crossAxisAlignment: CrossAxisAlignment.center, //coloum crossAxisAlignment is  vertical  niche niche like an androiad
+        //  mainAxisAlignment: MainAxisAlignment.start, //row mainaxielement is horizontzl like pasapasi like an
+        crossAxisAlignment: CrossAxisAlignment.start, //coloum crossAxisAlignment is  vertical  niche niche like an androiad
 
         children:<Widget> [
            Text("A" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
