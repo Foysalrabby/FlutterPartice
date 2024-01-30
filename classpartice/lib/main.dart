@@ -40,33 +40,49 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-       child: InkWell(
-        onTap: () {
-          print("S");
-        },
-        onDoubleTap: () {
-          print("D");
-        },
-        onLongPress: () {
-          print("L");
-        },
-        child: Container(
-           width: 200,
-          height: 200,
-         
-          color: Colors.blue,
-          child: Center(
-            child:InkWell( 
-              onTap: () {
-                print("object");
-              },
-              child:Text("CLICK",style: TextStyle(fontSize: 30,color: Colors.red),)  ,
-            )
-
+      body:Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: SingleChildScrollView(
+          child:  Column(
+        children: [
+          Container(
+       margin: EdgeInsets.only(bottom: 11),           width: 200,
+        height:200 ,
+        color: const Color.fromARGB(255, 238, 82, 82),
+        ), Container(margin: EdgeInsets.only(bottom: 11),
+          width: 200,
+        height:200 ,
+        color: Color.fromARGB(255, 58, 22, 124),
         ),
-      )) 
+         Container(margin: EdgeInsets.only(bottom: 11),
+          width: 200,
+        height:200 ,
+        color: Color.fromARGB(255, 78, 14, 197),
+        ), Container(margin: EdgeInsets.only(bottom: 11),
+          width: 200,
+        height:200 ,
+        color: Color.fromARGB(255, 171, 173, 13),
+        ),
+        Container(margin: EdgeInsets.only(bottom: 11),
+          width: 200,
+        height:200 ,
+        color: Color.fromARGB(255, 206, 131, 19),
+        ),
+        Container(margin: EdgeInsets.only(bottom: 11),
+          width: 200,
+        height:200 ,
+        color: Color.fromARGB(255, 68, 11, 54),
+        )
+        
+        ],
+     
       ),
+        )
+      )
+      
+      
+      
+      
     );
   }
 }
