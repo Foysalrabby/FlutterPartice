@@ -36,95 +36,19 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body:Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: SingleChildScrollView(
-          child:  Column(
-           
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(bottom: 12),
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-          children:[
-            Container(
-       margin: EdgeInsets.only(right: 11),   
-               width: 200,
-        height:200 ,
-        color: Color.fromARGB(255, 207, 221, 14),
+        appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          title: Text(widget.title),
         ),
-        Container(
-       margin: EdgeInsets.only(right: 11),      
-            width: 200,
-        height:200 ,
-        color: Color.fromARGB(255, 60, 33, 133),
-        ),
-        Container(
-       margin: EdgeInsets.only(right: 11),        
-          width: 200,
-        height:200 ,
-        color: Color.fromARGB(255, 192, 171, 171),
-        ),
-        Container(
-       margin: EdgeInsets.only(right: 11),        
-          width: 200,
-        height:200 ,
-        color: Color.fromARGB(255, 29, 185, 15),
-        ),
-        Container(
-       margin: EdgeInsets.only(right: 11),        
-          width: 200,
-        height:200 ,
-        color: Color.fromARGB(255, 27, 27, 27),
-        )
-        ])
-         ),
-            
-            )
-         ,
-          Container(
-       margin: EdgeInsets.only(bottom: 11),           width: 200,
-        height:200 ,
-        color: const Color.fromARGB(255, 238, 82, 82),
-        ), Container(margin: EdgeInsets.only(bottom: 11),
-          width: 200,
-        height:200 ,
-        color: Color.fromARGB(255, 58, 22, 124),
-        ),
-         Container(margin: EdgeInsets.only(bottom: 11),
-          width: 200,
-        height:200 ,
-        color: Color.fromARGB(255, 78, 14, 197),
-        ), Container(margin: EdgeInsets.only(bottom: 11),
-          width: 200,
-        height:200 ,
-        color: Color.fromARGB(255, 171, 173, 13),
-        ),
-        Container(margin: EdgeInsets.only(bottom: 11),
-          width: 200,
-        height:200 ,
-        color: Color.fromARGB(255, 206, 131, 19),
-        ),
-        Container(margin: EdgeInsets.only(bottom: 11),
-          width: 200,
-        height:200 ,
-        color: Color.fromARGB(255, 68, 11, 54),
-        )
-        
-        ],
-     
-      ),
-        )
-      )
-      
-      
-      
-      
-    );
+        body: ListView(
+          padding: EdgeInsets.only(left: 11),
+          children: [
+            Text("A"),
+            Text("B"),
+            Text("C"),
+            Text("D"),
+            Text("F"),
+          ],
+        ));
   }
 }
