@@ -35,15 +35,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    var arrname=["selim","korim","jamal","sima","rima","sima","jui"]
+    var arrname = ["selim", "korim", "jamal", "sima", "rima", "sima", "jui"];
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: Text(widget.title),
         ),
         body: ListView.builder(
+          scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) {
-            return Text(arrname[index],
+            return Text(
+              arrname[index],
               style: TextStyle(
                   fontSize: 40, color: Colors.red, fontWeight: FontWeight.bold),
             );
