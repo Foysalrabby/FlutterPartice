@@ -46,6 +46,39 @@ class _MyHomePageState extends State<MyHomePage> {
           child:  Column(
            
         children: [
+          Padding(
+            padding: const EdgeInsets.only(bottom: 12),
+            child: SingleChildScrollView(
+              child: Row(children:[Container(
+       margin: EdgeInsets.only(right: 11),           width: 200,
+        height:200 ,
+        color: Color.fromARGB(255, 207, 221, 14),
+        ),
+        Container(
+       margin: EdgeInsets.only(right: 11),           width: 200,
+        height:200 ,
+        color: Color.fromARGB(255, 60, 33, 133),
+        ),
+        Container(
+       margin: EdgeInsets.only(right: 11),           width: 200,
+        height:200 ,
+        color: Color.fromARGB(255, 192, 171, 171),
+        ),
+        Container(
+       margin: EdgeInsets.only(right: 11),           width: 200,
+        height:200 ,
+        color: Color.fromARGB(255, 29, 185, 15),
+        ),
+        Container(
+       margin: EdgeInsets.only(right: 11),           width: 200,
+        height:200 ,
+        color: Color.fromARGB(255, 27, 27, 27),
+        )
+        ])
+         ),
+            
+            )
+         ,
           Container(
        margin: EdgeInsets.only(bottom: 11),           width: 200,
         height:200 ,
