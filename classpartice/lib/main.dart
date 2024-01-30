@@ -40,31 +40,14 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: Text(widget.title),
         ),
-        body: ListView(
-          padding: EdgeInsets.only(left: 11),
-          scrollDirection: Axis.horizontal,
-          children: [
-            Padding(
-              padding: EdgeInsets.only(right: 6),
-              child: Text("A"),
-            ),
-            Padding(
-              padding: EdgeInsets.only(right: 6),
-              child: Text("B"),
-            ),
-            Padding(
-              padding: EdgeInsets.only(right: 6),
-              child: Text("C"),
-            ),
-            Padding(
-              padding: EdgeInsets.only(right: 6),
-              child: Text("D"),
-            ),
-            Padding(
-              padding: EdgeInsets.only(right: 6),
-              child: Text("F"),
-            )
-          ],
-        ));
+        body: ListView.builder(itemBuilder: (context,index){
+          return Text("data", style: TextStyle(fontSize: 40,color: Colors.red,fontWeight: FontWeight.bold),)
+        },
+        itemCount: 5,
+        
+        )
+        
+        
+        );
   }
 }
