@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-          child: InkWell(
+       child: InkWell(
         onTap: () {
           print("S");
         },
@@ -52,12 +52,21 @@ class _MyHomePageState extends State<MyHomePage> {
           print("L");
         },
         child: Container(
-           width: 100,
-          height: 100,
+           width: 200,
+          height: 200,
          
           color: Colors.blue,
+          child: Center(
+            child:InkWell( 
+              onTap: () {
+                print("object");
+              },
+              child:Text("CLICK",style: TextStyle(fontSize: 30,color: Colors.red),)  ,
+            )
+
         ),
-      )),
+      )) 
+      ),
     );
   }
 }
