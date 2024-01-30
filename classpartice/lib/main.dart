@@ -40,30 +40,24 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body:Container(
+      body: Center(
+          child: InkWell(
+        onTap: () {
+          print("S");
+        },
+        onDoubleTap: () {
+          print("D");
+        },
+        onLongPress: () {
+          print("L");
+        },
+        child: Container(
+           width: 100,
+          height: 100,
          
-          height: 400,
           color: Colors.blue,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly, //row mainaxielement is horizontzl like pasapasi like an
-        crossAxisAlignment: CrossAxisAlignment.stretch, //coloum crossAxisAlignment is  vertical  niche niche like an androiad
-
-        children:<Widget> [
-           Text("A" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
-           Text("B" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
-           Text("C" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
-           Text("D" ,style: TextStyle(fontSize: 30 ,color: Colors.red,fontWeight: FontWeight.bold),),
-           ElevatedButton( child: Text("click me"),
-           onPressed: (){
-            print("object");
-           },),
-
-           Text("data")
-
-      ]) ,
-      )
-      
-     ,//row is the horihontal form where mainacceselement is row and crossaseelement is colum 
+        ),
+      )),
     );
   }
 }
