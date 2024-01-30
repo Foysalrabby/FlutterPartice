@@ -42,12 +42,28 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: ListView(
           padding: EdgeInsets.only(left: 11),
+          scrollDirection: Axis.horizontal,
           children: [
-            Text("A"),
-            Text("B"),
-            Text("C"),
-            Text("D"),
-            Text("F"),
+            Padding(
+              padding: EdgeInsets.only(right: 6),
+              child: Text("A"),
+            ),
+            Padding(
+              padding: EdgeInsets.only(right: 6),
+              child: Text("B"),
+            ),
+            Padding(
+              padding: EdgeInsets.only(right: 6),
+              child: Text("C"),
+            ),
+            Padding(
+              padding: EdgeInsets.only(right: 6),
+              child: Text("D"),
+            ),
+            Padding(
+              padding: EdgeInsets.only(right: 6),
+              child: Text("F"),
+            )
           ],
         ));
   }
