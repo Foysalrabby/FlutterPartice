@@ -51,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
             );
           },
           itemCount: arrname.length,
+          itemExtent: 50,
         ));
   }
 }
